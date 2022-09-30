@@ -17,6 +17,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet"> 
+
   </head>
   <body>
     <nav>
@@ -41,30 +55,33 @@
             </li>
             <li class="list">
               <a href="dataorder.php" class="nav-link">
-                <img src="Frame.png" alt="">
+              <span class="material-symbols-outlined">
+                event_note</span>
                 <span class="link">All Order</span>
               </a>
             </li>
             <li class="list">
               <a href="datamenu.php" class="nav-link">
-                <img src="menu.png" alt="">
+              <span class="material-symbols-outlined">
+                        restaurant_menu</span>
                 <span class="link">All Menu</span>
               </a>
             </li>
             <li class="list">
               <a href="datacustomer.php" class="nav-link">
-                <img src="customer.png" alt="">
+              <span class="material-symbols-outlined">
+                    badge</span>
                 <span class="link">Data Customer</span>
               </a>
             </li>
 
             <div class="admin">
-              <img src="Ellipse 2.png" alt="" class="bulet">
+              <img src="img/Ellipse 2.png" alt="" class="bulet">
               <span class="tulisan">Admin</span>
             </div>
 
             <div class="logout">
-              <img src="log out.png" alt="">
+              <img src="img/Vector.png" alt="">
               <span class="tulisan">Log out</span>
             </div>
           </div>
@@ -77,14 +94,14 @@
     <div class="tampilan">
       <div class="dasboard">
         <span class="teks">Dasboard</span>
-        <p id="jam"></p>
+        <p id="jam" ></p>
      </div> 
 
       <div class="search">
-        <button class="ntf"><img src="notification.png" alt="" class="notifikasi"></button>
+        <button class="ntf"><img src="img/notice.png" alt="" class="notifikasi"></button>
       </div>
       <div class="search1">
-        <input type="text" class="input"><button class="src"><img src="icon search.png" alt="" class="cari"></button>
+        <input type="text" class="input"><button class="src"><img src="img/icon search.png" alt="" class="cari"></button>
       </div>
 
       <div class="semua">
@@ -117,6 +134,11 @@
       overlay.addEventListener("click", () => {
         navBar.classList.remove("open");
       });
+
+
+      var tanggal = new Date();
+ 
+      document.getElementById("jam").innerHTML = tanggal;
     </script>
   </body>
 </html>
