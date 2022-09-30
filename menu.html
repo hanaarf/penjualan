@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Order</title>
 
-    <link rel="stylesheet" href="css/datacustomer.css">
+    <link rel="stylesheet" href="css/menu.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
                 dashboard</span>
                 Dashboard</a> 
                  
-                 <a href="dataorder.php">
+                 <a href="#">
                  <span class="material-symbols-outlined">
                 event_note</span>
                 All Order</a> 
@@ -51,7 +51,7 @@
                         restaurant_menu</span>
                     All Menu</a>
 
-                 <a href="#.php">
+                 <a href="datacustomer.php">
                     <span class="material-symbols-outlined">
                     badge</span>
                     Data Customer</a>
@@ -60,45 +60,22 @@
 
         <div class="kanan">
             <div class="kananatas">
-                <p>Data Pelanggan</p>           
+                <p>Create</p>           
                 <hr>
             </div>
             <div class="kananbawah">
-            <h4><a href="customer.html">Create</a></h4>
 
+                <form action="menu.php" method="post">
+                  
+                    <p><label class="id">kode: <input type="number" class="input" name="kode" required="required"></label></p>
 
+                    <p><label class="id">nama menu : <input type="text" class="input1"  name="nama_menu" required="required"></label></p>
+                    <p><label class="id">harga : <input type="text" class="input2"  name="harga" required="required"></label></p>
+                    <p><label class="id">kategori: <input type="text" class="input3" name="kategori" required="required"></label></p>
+                   
 
-            <center>
-            <table cellpadding="15" cellspacing="0" width = 950px >
-                <tr height = 60px>
-                    <th>NIK</th>
-                    <th>Nama Lengkap</th>
-                    <th>Alamat</th>
-                    <th>Telepon</th>
-                    <th>Action</th>
-                </tr>
-            
-
-                <?php
-                $sql = "SELECT * FROM `pelanggan`";
-                $query = mysqli_query ($connect,$sql);
-                while($data= mysqli_fetch_array ($query)){
-                    echo "
-                <tr height = 50px class='data'>
-                    <td>$data[nik]</td>
-                    <td>$data[nama_lengkap]</td>
-                    <td>$data[alamat]</td>
-                    <td>$data[telepon]</td>
-                    <td>
-                        <a href='formeditcustomer.php?nik=".$data ['nik']."'>Edit </a> 
-                        <a href='hapuscustomer.php?nik=".$data ['nik']."'>Hapus</a>
-                    </td>
-                </tr>
-                    ";
-                }
-                ?>
-            </table>
-            </center>
+                    <input type="submit" class="submit" name="simpan" value="simpan">
+                </form>
 
             </div>
         </div>

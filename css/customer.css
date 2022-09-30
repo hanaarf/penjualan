@@ -95,7 +95,7 @@ hr{
 }
 .kananatas p{
     margin-top: 25px;
-    margin-left: -910px;
+    margin-left: -810px;
     font-size: 23px;
     font-weight: 600;
     color: #585555;
@@ -105,70 +105,6 @@ hr{
 }
 
 
-table{
-    margin-top: 40px;
-}
-
-table tr th{
-    background-color: #1F372C;
-    color: white;
-}
-
-table .data:nth-child(2),
-table .data:nth-child(4),
-table .data:nth-child(6),
-table .data:nth-child(8),
-table .data:nth-child(10),
-table .data:nth-child(12){
-    background-color: #D8C89C;
-    color: white;
-    text-align: center;
-}
-
-table .data:nth-child(3),
-table .data:nth-child(5),
-table .data:nth-child(7),
-table .data:nth-child(9),
-table .data:nth-child(11),
-table .data:nth-child(13){
-    background-color: #1F372C;
-    color: white;
-    text-align: center;
-    
-}
-table .data a{
-    color: white;
-    text-decoration: none;
-}
-
-
-table .data a:first-child{
-    background-color: #4E9F3D;
-    padding:5px 9px ;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-table .data a:first-child:hover{
-    background-color: #8CE47A;
-    padding:5px 9px ;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-table .data a:nth-child(2){
-    background-color: #FF0000;
-    padding:5px 9px ;
-    border-radius: 10px;
-    margin-right: -10px;
-}
-
-table .data a:nth-child(2):hover{
-    background-color: #F88D8D;
-    padding:5px 9px ;
-    border-radius: 10px;
-    margin-right: -10px;
-}
 
 .kananbawah h4 a{
     text-decoration: none;
@@ -185,7 +121,7 @@ table .data a:nth-child(2):hover{
    
 }
 
-.kiribawah a:nth-child(3){
+.kiribawah a:nth-child(4){
     padding: 20px;
     text-decoration: none;
     color: #D0AD4B;
@@ -194,3 +130,72 @@ table .data a:nth-child(2):hover{
     font-weight: 400;
 }
 
+form{
+    margin-top: 5px;
+    margin-left: 25px;
+    border: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    
+ }
+
+form p{
+   padding: 15px;
+}
+
+.id{
+    font-size: 15px;
+    color: #6D5F5F;
+    font-weight: 500;
+    font-family:'Poppins', sans-serif ;
+}
+
+.input{
+    margin-left: 86px;
+    background-color: #ffffff;
+    height: 40px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #e4e1e1;
+    
+}
+
+.input1{
+    margin-left: 28px;
+    background-color: #ffffff;
+    height: 40px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #e4e1e1;  
+}
+.input2{
+    margin-left: 75px;
+    background-color: #ffffff;
+    height: 40px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #e4e1e1;  
+}
+.input3{
+    margin-left: 65px;
+    background-color: #ffffff;
+    height: 40px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #e4e1e1;  
+}
+
+
+
+.submit{
+    background-color:  rgb(38, 165, 59);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 7px 20px;
+    width: max-content;
+    margin-left: 15px;
+    margin-top: 20px;
+}

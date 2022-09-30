@@ -106,7 +106,7 @@ hr{
 
 
 table{
-    margin-top: 0px;
+    margin-top: 40px;
 }
 
 table tr th{
@@ -170,16 +170,22 @@ table .data a:nth-child(2):hover{
     margin-right: -10px;
 }
 
-.kananbawah h4 a:hover{
+
+.kananbawah h4 a{
     text-decoration: none;
-    margin-left: 50px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
     color: rgb(241, 241, 241);
     font-size: 15px;
     font-weight: 600;
-    background-color: #FFF172;
+    margin-bottom: 20px;
+    background-color: #D0AD4B;
     padding:  12px 14px 10px 14px ;
     border-radius: 5px;
+   
 }
+
 .kiribawah a:nth-child(4){
     padding: 20px;
     text-decoration: none;
