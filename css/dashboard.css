@@ -1,4 +1,3 @@
-
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -20,7 +19,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #1E5128;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 nav .logo {
@@ -29,13 +28,13 @@ nav .logo {
   margin: 0 24px;
 }
 .logo .menu-icon {
-  color: #707070;
+  color: #FFFFFF;
   font-size: 24px;
   margin-right: 14px;
   cursor: pointer;
 }
 .logo .logo-name {
-  color: #707070;
+  color: #FFFFFF;
   font-size: 22px;
   font-weight: 500;
 }
@@ -72,17 +71,18 @@ nav.open .sidebar {
   text-decoration: none;
 }
 .lists .nav-link:hover {
-  background-color: #4070f4;
+  background-color: #D0AD4B;
 }
 .nav-link .icon {
   margin-right: 14px;
   font-size: 20px;
-  color: #707070;
+  color: #FFFFFF;
 }
 .nav-link .link {
   font-size: 16px;
-  color: #707070;
+  color: #FFFFFF;
   font-weight: 400;
+
 }
 .lists .nav-link:hover .icon,
 .lists .nav-link:hover .link {
@@ -103,4 +103,92 @@ nav.open ~ .overlay {
   opacity: 1;
   left: 260px;
   pointer-events: auto;
+}
+img {
+  height: 20px;
+  padding-right: 10px;
+  margin-top: -5px;
+}
+.admin {
+  margin-top: 150px;
+  margin-left: 30px;
+  color: #FFFFFF;
+  display: flex;
+}
+.bulet {
+  width: 45px;
+  height: 35px;
+}
+.tulisan {
+  font-size: 15px;
+  padding-top: -10px;
+}
+.logout {
+  margin-left: 37px;
+  margin-top: 19px;
+  color: #FFFFFF;
+}
+.dasboard {
+  margin-left: 200px;
+  margin-top: 120px;
+  font-size: 25px;
+}
+.search {
+  display: flex;
+  margin-left: 67%;
+  margin-top: -20px;
+}
+.notifikasi {
+  height: 30px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.totalmenu {
+  width: 250px;
+  height: 150px;
+  background-color: #f1efef;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.total {
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #565454;
+}
+
+.semua {
+  display: flex;
+  margin-left: 200px;
+  column-gap: 100px;
+}
+
+.input {
+  height: 40px;
+  width: 150px;
+  margin-top: -15px;
+}
+
+.src {
+  height: 40px;
+  margin-top: -15px;
+  background-color: #FFFFFF;
+  
+}
+
+.cari {
+  margin: 5px;
+}
+
+.ntf {
+  height: 40px;
+  margin-top: -5px;
+  margin-left: -5px;
+  background-color: #FFFFFF;
+}
+
+.search1 {
+  display: flex;
+  margin-left: 71%;
+  margin-top: -24px;
 }
