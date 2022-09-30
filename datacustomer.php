@@ -88,8 +88,8 @@
                     <td>$data[alamat]</td>
                     <td>$data[telepon]</td>
                     <td>
-                        <a href=''>Edit </a> 
-                        <a href=''>Hapus</a>
+                        <a href='formeditcustomer.php?nik=".$data ['nik']."'>Edit </a> 
+                        <a href='hapuscustomer.php?nik=".$data ['nik']."'>Hapus</a>
                     </td>
                 </tr>
                     ";

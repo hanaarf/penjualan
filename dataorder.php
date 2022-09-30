@@ -84,14 +84,14 @@
                 while($data= mysqli_fetch_array ($query)){
                     echo "
                 <tr height = 50px class='data'>
-                    <td>$data[no]</td>
+                    <td>$data[nomor]</td>
                     <td>$data[nama_pelanggan]</td>
                     <td>$data[menu]</td>
                     <td>$data[harga]</td>
                     <td>$data[jumlah]</td>
                     <td>
-                        <a href=''>Edit </a> 
-                        <a href=''>Hapus</a>
+                        <a href='formeditorder.php?nomor=".$data ['nomor']."'>Edit </a> 
+                        <a href='hapusorder.php?nomor=".$data ['nomor']."'>Hapus</a>
                     </td>
                 </tr>
                     ";

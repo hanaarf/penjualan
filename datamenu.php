@@ -88,8 +88,8 @@
                     <td>$data[harga]</td>
                     <td>$data[kategori]</td>
                     <td>
-                        <a href=''>Edit </a> 
-                        <a href=''>Hapus</a>
+                        <a href='formeditmenu.php?kode=".$data ['kode']."'>Edit </a> 
+                        <a href='hapusmenu.php?kode=".$data ['kode']."'>Hapus</a>
                     </td>
                 </tr>
                     ";

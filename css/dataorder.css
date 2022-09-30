@@ -52,6 +52,16 @@
     font-size: 15px;
     font-weight: 400;
 }
+.kiribawah a:nth-child(2){
+    padding: 20px;
+    text-decoration: none;
+    color: #D0AD4B;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
 
 
 .kiribawah span{
