@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Order</title>
 
-    <link rel="stylesheet" href="css/dataorder.css">
+    <link rel="stylesheet" href="css/datamenu.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,12 +41,12 @@
                 dashboard</span>
                 Dashboard</a> 
                  
-                 <a href="#">
+                 <a href="dataorder.php">
                  <span class="material-symbols-outlined">
                 event_note</span>
                 All Order</a> 
 
-                 <a href="datamenu.php">
+                 <a href="#">
                     <span class="material-symbols-outlined">
                         restaurant_menu</span>
                     All Menu</a>
@@ -60,7 +60,7 @@
 
         <div class="kanan">
             <div class="kananatas">
-                <p>All Order</p>           
+                <p>All Menu</p>           
                 <hr>
             </div>
             <div class="kananbawah">
@@ -69,26 +69,24 @@
             <center>
             <table cellpadding="15" cellspacing="0" width = 950px >
                 <tr height = 60px>
-                    <th>No</th>
-                    <th>Nama Pelanggan</th>
-                    <th>Menu</th>
+                    <th>Kode</th>
+                    <th>Nama Menu</th>
                     <th>Harga</th>
-                    <th>Jumlah</th>
+                    <th>Kategori</th>
                     <th>Action</th>
                 </tr>
             
 
                 <?php
-                $sql = "SELECT * FROM `detail_pesan`";
+                $sql = "SELECT * FROM `menu`";
                 $query = mysqli_query ($connect,$sql);
                 while($data= mysqli_fetch_array ($query)){
                     echo "
                 <tr height = 50px class='data'>
-                    <td>$data[no]</td>
-                    <td>$data[nama_pelanggan]</td>
-                    <td>$data[menu]</td>
+                    <td>$data[kode]</td>
+                    <td>$data[nama_menu]</td>
                     <td>$data[harga]</td>
-                    <td>$data[jumlah]</td>
+                    <td>$data[kategori]</td>
                     <td>
                         <a href=''>Edit </a> 
                         <a href=''>Hapus</a>

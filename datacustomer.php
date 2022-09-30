@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Order</title>
 
-    <link rel="stylesheet" href="css/dataorder.css">
+    <link rel="stylesheet" href="css/datacustomer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
                 dashboard</span>
                 Dashboard</a> 
                  
-                 <a href="#">
+                 <a href="dataorder.php">
                  <span class="material-symbols-outlined">
                 event_note</span>
                 All Order</a> 
@@ -51,7 +51,7 @@
                         restaurant_menu</span>
                     All Menu</a>
 
-                 <a href="datacustomer.php">
+                 <a href="#.php">
                     <span class="material-symbols-outlined">
                     badge</span>
                     Data Customer</a>
@@ -60,7 +60,7 @@
 
         <div class="kanan">
             <div class="kananatas">
-                <p>All Order</p>           
+                <p>Data Pelanggan</p>           
                 <hr>
             </div>
             <div class="kananbawah">
@@ -69,26 +69,24 @@
             <center>
             <table cellpadding="15" cellspacing="0" width = 950px >
                 <tr height = 60px>
-                    <th>No</th>
-                    <th>Nama Pelanggan</th>
-                    <th>Menu</th>
-                    <th>Harga</th>
-                    <th>Jumlah</th>
+                    <th>NIK</th>
+                    <th>Nama Lengkap</th>
+                    <th>Alamat</th>
+                    <th>Telepon</th>
                     <th>Action</th>
                 </tr>
             
 
                 <?php
-                $sql = "SELECT * FROM `detail_pesan`";
+                $sql = "SELECT * FROM `pelanggan`";
                 $query = mysqli_query ($connect,$sql);
                 while($data= mysqli_fetch_array ($query)){
                     echo "
                 <tr height = 50px class='data'>
-                    <td>$data[no]</td>
-                    <td>$data[nama_pelanggan]</td>
-                    <td>$data[menu]</td>
-                    <td>$data[harga]</td>
-                    <td>$data[jumlah]</td>
+                    <td>$data[nik]</td>
+                    <td>$data[nama_lengkap]</td>
+                    <td>$data[alamat]</td>
+                    <td>$data[telepon]</td>
                     <td>
                         <a href=''>Edit </a> 
                         <a href=''>Hapus</a>

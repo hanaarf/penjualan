@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.smuanya{
+    display: flex;
+}
+
+.kiri{
+    width:270px;
+    height: 100vh ;
+    background-color: #1E5128;
+    
+}
+
+.kiriatas{
+    padding: 5px;
+    height: 80px;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    background-color: #16391D;
+   
+   
+}
+
+
+.kiriatas h1{
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+
+}
+
+.kiribawah{
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: #1E5128; 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.kiribawah a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.kiribawah span{
+  
+    
+    border-radius: 5px;
+    font-size: 28px;
+    color: white;
+    width: 40px;
+    height: 35px;
+    justify-content: center;
+  
+}
+
+.kiribawah span:nth-child(3){
+  background-color: #a9b3ab;
+    margin-right: 15px;
+    font-size: 28px;
+    color: white;
+    background-color: #1A4628;
+    width: 20px;
+    
+}
+.kanan{
+    width: 90%;
+    height: 100vh;
+}
+.kananatas{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    color: #D0AD4B;
+    margin-top: 30px;
+}
+.kananatas p{
+    margin-top: 25px;
+    margin-left: -810px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #585555;
+}
+.kananbawah {
+    margin-top: px;
+}
+
+
+table{
+    margin-top: 0px;
+}
+
+table tr th{
+    background-color: #1F372C;
+    color: white;
+}
+
+table .data:nth-child(2),
+table .data:nth-child(4),
+table .data:nth-child(6),
+table .data:nth-child(8),
+table .data:nth-child(10),
+table .data:nth-child(12){
+    background-color: #D8C89C;
+    color: white;
+    text-align: center;
+}
+
+table .data:nth-child(3),
+table .data:nth-child(5),
+table .data:nth-child(7),
+table .data:nth-child(9),
+table .data:nth-child(11),
+table .data:nth-child(13){
+    background-color: #1F372C;
+    color: white;
+    text-align: center;
+    
+}
+table .data a{
+    color: white;
+    text-decoration: none;
+}
+
+
+table .data a:first-child{
+    background-color: #4E9F3D;
+    padding:5px 9px ;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+table .data a:first-child:hover{
+    background-color: #8CE47A;
+    padding:5px 9px ;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+table .data a:nth-child(2){
+    background-color: #FF0000;
+    padding:5px 9px ;
+    border-radius: 10px;
+    margin-right: -10px;
+}
+
+table .data a:nth-child(2):hover{
+    background-color: #F88D8D;
+    padding:5px 9px ;
+    border-radius: 10px;
+    margin-right: -10px;
+}
+
+.kananbawah h4 a:hover{
+    text-decoration: none;
+    margin-left: 50px;
+    color: rgb(241, 241, 241);
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FFF172;
+    padding:  12px 14px 10px 14px ;
+    border-radius: 5px;
+}
+
