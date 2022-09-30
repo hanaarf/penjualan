@@ -36,7 +36,7 @@
             </div>
 
             <div class="kiribawah">
-                 <a href="dashboard.php">
+                 <a href="dashboard/index.html">
                  <span class="material-symbols-outlined">
                 dashboard</span>
                 Dashboard</a> 

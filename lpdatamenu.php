@@ -36,7 +36,7 @@
             </div>
 
             <div class="kiribawah">
-                 <a href="dashboard.php">Dashboard</a> 
+                 <a href="dashboard/index.html">Dashboard</a> 
                  
                  <a href="lpdatamenu.php">Menu</a> 
 
