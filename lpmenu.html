@@ -8,9 +8,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Order</title>
+    <title>Menu Hero</title>
 
-    <link rel="stylesheet" href="css/dataorder.css">
+    <link rel="stylesheet" href="css/menu.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,56 +36,35 @@
             </div>
 
             <div class="kiribawah">
-                 <a href="dashboard/index.html">Dashboard</a> 
+                 <a href="dashboard/index.html">
+                
+                Dashboard</a> 
                  
-                 <a href="lpdatamenu.php">Menu</a> 
-
-
+                 <a href="#">
+                 
+                Menu</a> 
 
             </div>
         </div>
 
         <div class="kanan">
             <div class="kananatas">
-                <p>Menu</p>           
+                <p>Create</p>           
                 <hr>
             </div>
             <div class="kananbawah">
-            <h4><a href="lpmenu.html">Create</a></h4>
 
+                <form action="lpmenu.php" method="post">
+                  
+                    <p><label class="id">Nomor: <input type="number" class="input" name="nomor" required="required"></label></p>
 
-            <center>
-            <table cellpadding="15" cellspacing="0" width = 950px >
-                <tr height = 60px>
-                    <th>Nomor</th>
-                    <th>Gambar</th>
-                    <th>Judul</th>
-                    <th>Teks</th>
-                    <th>Action</th>
-                </tr>
-            
+                    <p><label class="id">Gambar : <input type="text" class="input1"  name="gambar" required="required"></label></p>
+                    <p><label class="id">Judul : <input type="text" class="input2"  name="judul" required="required"></label></p>
+                    <p><label class="id">Teks: <input type="text" class="input3" name="teks" required="required"></label></p>
+                   
 
-                <?php
-                $sql = "SELECT * FROM `lp_menu`";
-                $query = mysqli_query ($connect,$sql);
-                while($data= mysqli_fetch_array ($query)){
-                    echo "
-                <tr height = 50px class='data'>
-                    <td>$data[nomor]</td>
-                    <td><img src='img/$data[gambar] ' width='50px' ></td>
-                    <td>$data[judul]</td>
-                    <td>$data[teks]</td>
-                     <td>
-                        <a href='lpformeditmenu.php?nomor=".$data ['nomor']."'>Edit </a> 
-                        <a href='lphapusmenu.php?nomor=".$data ['nomor']."'>Hapus</a>
-                    </td>
-                </tr>
-                    ";
-                }
-                ?>
-            </table>
-            <img src="img/" alt="">
-            </center>
+                    <input type="submit" class="submit" name="simpan" value="simpan">
+                </form>
 
             </div>
         </div>
