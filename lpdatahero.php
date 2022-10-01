@@ -71,18 +71,19 @@
                     echo "
                 <tr height = 50px class='data'>
                     <td>$data[nomor]</td>
-                    <td>$data[gambar]</td>
+                    <td><img src='img/$data[gambar] ' width='50px' ></td>
                     <td>$data[judul]</td>
                     <td>$data[teks]</td>
                      <td>
-                        <a href=''>Edit </a> 
-                        <a href=''>Hapus</a>
+                        <a href='lpformedithero.php?nomor=".$data ['nomor']."'>Edit </a> 
+                        <a href='lphapushero.php?nomor=".$data ['nomor']."'>Hapus</a>
                     </td>
                 </tr>
                     ";
                 }
                 ?>
             </table>
+            <img src="img/" alt="">
             </center>
 
             </div>
