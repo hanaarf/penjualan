@@ -37,7 +37,7 @@
              <div class="nav-link">
                 <div><a href="#hero">Home</a></div>
                 <div><a href="#menu">Menu</a></div>
-                <div><a href="http://">Order</a></div>
+                <div><a href="order.html">Order</a></div>
              </div>
           </div>
        
@@ -50,7 +50,7 @@
                     <p class="judul">SPEKTA september ekstra</p>
                     <p>8 Chruncy Wings Louisiana Rub FREE 8 Boneless Wings (any flavor)</p>
           
-                    <button class="order"><a href="">Order</a></button>
+                    <button class="order"><a href="order.html">Order</a></button>
                </div>
                <span class="material-symbols-outlined">arrow_forward</span>
         </div>
@@ -66,7 +66,7 @@
                                    <div class="div">
                                         <p class="deskripsi">Chrunchy  Wings  Fries Meal</p>
                                         <p class="deskripsi1">5 Crunchy Wings + Fries + Drink</p>
-                                        <button class="order"><a href="">Order</a></button>
+                                        <button class="order"><a href="order.html">Order</a></button>
                                    </div>
                               </div>
 
@@ -78,7 +78,7 @@
                                    <div class="div">
                                         <p class="deskripsi">Party Set 12 Mixed</p>
                                         <p class="deskripsi1">6 Chrunchy Wings & 6 Boneless Wings</p>
-                                        <button class="order1"><a href="">Order</a></button>
+                                        <button class="order1"><a href="order.html">Order</a></button>
                                    </div>
                               </div>
 
@@ -90,7 +90,7 @@
                                    <div class="div">
                                         <p class="deskripsi">Claasic Wings Cajun Rice Meal</p>
                                         <p class="deskripsi1">5 Classic Wings + Cajun Rice +Drink</p>
-                                        <button class="order"><a href="">Order</a></button>
+                                        <button class="order"><a href="order.html">Order</a></button>
                                    </div>
                               </div>
                         </div>
