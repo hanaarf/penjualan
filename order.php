@@ -11,12 +11,16 @@ include 'koneksi.php';
 
         $sql = "INSERT INTO detail_pesan  VALUES ('$nomor','$nama_pelanggan','$menu','$harga','$jumlah')";
         $query =  mysqli_query ($connect, $sql);
-
+        
+        
+        
         if($query){
             header('location: order.html');
+            
         }else{
             header('location: order.php?status=gagal');
         }
         
     }
 ?>
+

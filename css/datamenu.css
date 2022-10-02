@@ -27,6 +27,10 @@
    
 }
 
+h6 {
+    font-size: 40px;
+}
+
 
 .kiriatas h1{
     font-size: 20px;
@@ -184,6 +188,7 @@ table .data a:nth-child(2):hover{
     border-radius: 5px;
    
 }
+
 
 .kiribawah a:nth-child(3){
     padding: 20px;

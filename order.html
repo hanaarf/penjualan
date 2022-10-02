@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order </title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/hw.jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li class="home"><a href="Home.php">Home</a></li>
+                    <li class="home"><a href="landingpage.php">Home</a></li>
                     <li> /  order</li>
                 </ul>
             </div>
@@ -37,28 +38,47 @@
         
         <div class="kanankiri">
             <div class="kanan">
-            <p><label class="p">No: <input type="number" class="input" name="nomor" required="required"></label></p>
+            <p><label class="p">No: <input type="number" class="input" id="no" name="nomor" required="required"></label></p>
     
-            <p><label class="p">Nama Pelanggan : <input type="text" class="input" name="nama_pelanggan"  required="required"></label></p>
+            <p><label class="p">Nama Pelanggan : <input type="text" class="input" id="nama_pelanggan" name="nama_pelanggan"  required="required"></label></p>
     
         </div>
     
             <div class="kiri">
-            <p><label class="p">Menu : <input type="text" class="input" name="menu"  required="required"></label></p>
+            <p><label class="p">Menu : <input type="text" class="input" id="menu" name="menu"  required="required"></label></p>
     
     
-            <p><label class="p">Harga :  <input type="text" class="input" name="harga"  required="required"></label></p>
+            <p><label class="p">Harga :  <input type="text" class="input" id="harga" name="harga"  required="required"></label></p>
 
-            <p><label class="p">Jumlah :  <input type="text" class="input" name="jumlah"  required="required"></label></p>
-            
-    
+            <p><label class="p">Jumlah :  <input type="text" class="input" id="jumlah" name="jumlah"  required="required"></label></p>
             </div>
 
         </div>
-    
-            <input type="submit" class="submit" name="simpan" value="pesan">
+
+            <button onclick="proses()" type="submit" class="submit" name="simpan" value="pesan">Order</button>
+            <div id="hasil" class="kotak"></div> 
+            
+      
         </form>
 
+        <div class="message">
+            <div class="success" id="success">Your Order Successfully Sent!</div>
+            <div class="danger" id="danger">Feilds Can't be Empty!</div>
+        </div>
+
+        <script>
+            function proses(){
+                var hasil = "Your order succesfully send"
+
+                
+                document.getElementById("hasil").innerHTML = hasil 
+
+                
+            }
+
+        </script>
+
+    
         
 
 
